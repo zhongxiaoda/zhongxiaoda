@@ -3,11 +3,18 @@
 
     </head>
     <body>
+        <style type="text/css">
+            #datetime{
+                text-align: center;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: xx-large;
+            }
+        </style>
         <div id="datetime"></div>
-        <script>
-            setInterval(() => {
-                document.getElementById("datetime").innerHTML(new Date().toLocaleDateString)
-            }, 1000);
-        </script>
     </body>
+    <script>
+        setInterval(() => {
+            document.getElementById("datetime").innerHTML=new Date().toLocaleString();
+        }, 1000);
+    </script>
 </html>
